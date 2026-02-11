@@ -68,7 +68,7 @@ def two_sum_optimized(numbers, target):
    if needed in seen:
      return (seen[needed], i)
    seen[numbers[i]] = i
- return None
+   return None
 
 
 
