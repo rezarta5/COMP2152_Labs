@@ -240,16 +240,13 @@ LOG_FILE = "diagnostics.csv"
 
 
 def log_to_csv(filename, command, target, result, status):
- """Append one row to the CSV log file with a timestamp."""
- timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
- # Open filename in append mode ("a") with newline=""
- with open(filename, "a", newline="") as file:
-
- # Create a csv.writer(file)
-  writer = csv.writer(file)
-
- # Write one row: [timestamp, command, target, result, status]
- writer.writerow( [timestamp, command, target, result, status])
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    # Open filename in append mode ("a") with newline=""
+    with open(filename, "a", newline="") as file:
+    # Create a csv.writer(file)
+        writer = csv.writer(file)
+        # Write one row: [timestamp, command, target, result, status]
+        writer.writerow( [timestamp, command, target, result, status])
 
 
 def read_csv_log(filename):
