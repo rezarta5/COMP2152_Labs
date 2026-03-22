@@ -1,6 +1,6 @@
 # ============================================================
 #  WEEK 10 LAB — Q1: PASSWORD VAULT
-#  COMP2152 — Rezarta Marku
+#  COMP2152 — Maziar Sojoudian
 # ============================================================
 
 import sqlite3
